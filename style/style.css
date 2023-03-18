@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+}
+
+/*menu responsive*/
+.cabecera {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(../assets/cancha-futbool.jpg);
+    background-size: cover;
+    min-height: 500px;
+    height: 100vh;
+    color: #fff;
+}
+
+.nav {
+
+    --state-close: scale(0);
+    --state-desplegable: scale(1);
+    --state-menu: translate(-100%);
+    display: grid;
+    padding: 40px 0;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_logo {
+    font-size: 2.5rem;
+}
+
+.nav_links {
+
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    
+    display: grid;
+    align-content: center;
+    gap: 2em;
+    padding-left: 5%;
+
+    transform: var(--state-menu);
+    transition: .4s;
+}
+
+.nav_item {
+    list-style: none;
+}
+
+.nav_desplegable,
+.nav_close {
+    cursor: pointer;
+    grid-column: -2/-1;
+    grid-row: 1/2;
+    transition: .4s transform;
+}
+
+.nav_icon {
+    width: 40px;
+}
+
+.nav_desplegable {
+    transform: var(--state-desplegable);
+}
+
+.nav_close {
+    transform: var(--state-close);
+}
+
+.nav:target {
+    --state-close: scale(1);
+    --state-desplegable: scale(0);
+    --state-menu: translate(0);
+}
+
+.nav_link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+}
+
+@media (min-width: 768px) {
+    .nav {
+        --state-desplegable: scale(0);
+        --state-menu: translate(0);
+    }
+    .nav:target {
+        --state-close: scale(0);
+    }
+    .nav_links {
+
+        background-color: unset;
+        position: unset;
+        padding: 0;
+        gap: 1,5em;
+        grid-auto-flow: column;
+    
+        transform: unset;
+
+        grid-column: -2/-1;
+        grid-row: 1/2;
+    }
+}
+
+.nav_link {
+    font-size: 1rem;
+    letter-spacing: none;
+}
+
+
+
+
+
