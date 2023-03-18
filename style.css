@@ -16,7 +16,7 @@ body {
 
 /*menu responsive*/
 .cabecera {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(../assets/cancha-futbool.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url(./assets/cancha-futbool.jpg);
     background-size: cover;
     min-height: 500px;
     height: 100vh;

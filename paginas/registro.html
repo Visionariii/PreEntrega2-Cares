@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <title>Foottalent</title>
+
+    <link rel="stylesheet" href="../style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!--Barra de navegacion-->
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">Foottalent</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menú</h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Ingresar</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Registrarse</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Nosotros
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Misión</a></li>
+                    <li><a class="dropdown-item" href="#">Visión</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Contacto</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                <button class="btn btn-success" type="submit">Buscar</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+   
+     <!-- FORMULARIO-->
+    <div class="container-fluid">
+
+        <form class="row g-3 mt-5">
+
+            <a href="../index.html">Volver</a>
+
+            <div class="col-sm-6">
+                <label for="inputName" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+            </div>
+
+            <div class="col-sm-6">
+                <label for="inputNacimiento" class="form-label">Fecha de nacimiento</label>
+                <input type="text" class="form-control" id="inputNacimiento" placeholder="Fecha de nacimiento">
+            </div>
+
+            <div class="col-sm-6">
+                <label for="emailImput" class="form-label">Email</label>
+                <input type="email" class="form-control" id="emailImput" placeholder="Escribe tu email">
+            </div>
+
+            <div class="col-sm-6">
+                <label for="inputPass" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" id="inputPass" placeholder="Escribe tu contraseña">
+            </div>
+
+            <div class="col-sm-12">
+                <label for="inputAddres" class="form-label">Dirección</label>
+                <input type="text" class="form-control" id="inputAddres" placeholder="direccion">
+            </div>
+
+            <div class="col-sm-6">
+                <label for="inputCity" class="form-label">Ciudad</label>
+                <input type="text" class="form-control" id="inputCity" placeholder="ciudad">
+            </div>
+
+            <div class="col-sm-3">
+                <label for="inputCountry" class="form-label">País</label>
+                <input type="text" class="form-control" id="inputCountry" placeholder="Pais">
+            </div>
+
+            <div class="col-sm-3">
+                <label for="inputCodigoPostal" class="form-label">Código postal</label>
+                <input type="text" class="form-control" id="inputCodigoPostal" placeholder="Codigo postal">
+            </div>
+
+            <div class="col-sm-6">
+                <p>Sexo:</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                    <label class="form-check-label" for="flexCheckIndeterminate">
+                      Masculino
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                    <label class="form-check-label" for="flexCheckIndeterminate">
+                      Femenino
+                    </label>
+                  </div>
+            </div>
+
+            <div class="col-sm-6">
+                <p>¿Tú eres?:</p>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                    <label class="form-check-label" for="flexCheckIndeterminate">
+                      Jugador/a
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                    <label class="form-check-label" for="flexCheckIndeterminate">
+                      Entrenador/a
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                    <label class="form-check-label" for="flexCheckIndeterminate">
+                      Ojeador/a
+                    </label>
+                  </div>
+            </div>
+
+            <div class="col-sm-12">
+                <div class="form-check">
+                    <label for="checkTerms" class="form-check-label">Acepto lo terminos y condiciones</label>
+                    <input type="checkbox" class="form-check-input">
+                </div>
+
+                <div class="col-sm-12">
+                    <button type="submit" class="btn btn-primary">Regístrate</button>
+                </div>
+
+            </div>
+
+            
+
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
